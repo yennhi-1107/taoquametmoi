@@ -1,0 +1,40 @@
+﻿body {
+}
+body {
+}
+
+.container {
+}
+
+h2 {
+}
+
+.a {
+    font-family: Arial;
+}
+
+.form-group {
+    padding-top: 10px;
+}
+
+
+
+input[type="text"],
+input[type="email"],
+input[type="password"],
+input[type="date"] {
+    width: 200px;
+    height: 9%;
+    padding: 2px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.bookdetailwrap {
+    background: url("http://nhanam.com.vn/Content/images2/headerbg.png") repeat scroll 0 0 rgba(0,0,0,0);
+    box-shadow: 0 0 4px #444;
+    margin: 10px auto;
+    padding: 30px;
+    width: 940px;
+    min-height: 400px
+}

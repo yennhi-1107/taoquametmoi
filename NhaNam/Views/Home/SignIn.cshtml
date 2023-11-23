@@ -1,0 +1,86 @@
+﻿
+@{
+    ViewBag.Title = "SignIn";
+    Layout = "~/Views/Shared/_MasterLayout.cshtml";
+}
+
+<link href="~/Content/StyleAccount.css" rel="stylesheet" />
+
+<div class="bookdetailwrap">
+
+    <form id="form1-fieldset" runat="server" align-content="center" style=" color: black">
+
+        <form id="basicInfo" style="width:auto; height:auto; background-color:whitesmoke">
+            <div class="a">
+                <h2> ĐĂNG NHẬP </h2>
+            </div>
+            <tr>
+                <label for="email">Email:</label>
+                <br />
+                <input type="email" id="email" onkeydown="if(event.keyCode === 13) {event.preventDefault(); document.getElementById('password').focus();}" required>
+            </tr>
+            <br />
+            <br />
+            <tr>
+
+                <label for="password">Mật khẩu:</label>
+                <br />
+                <input type="password" id="password" onkeydown="if (event.keyCode === 13) {event.preventDefault(); document.getElementById('submit').click();}" required>
+
+            </tr>
+            <br />
+            <br />
+            <input type="checkbox" /> Ghi nhớ
+            <br />
+            <br />
+
+            <button type="submit" id="submit" style="padding: 5px 10px; color: white; background-color: forestgreen">
+                <a style="color:white" target="_blank">
+                    Đăng nhập
+                </a>
+            </button>
+
+            <br />
+            <!--mấy cái link là để minh họa-->
+            Chưa có tài khoản? Hãy
+
+            <button type="signup" id="signup" style="padding: 5px 10px; color: white; background-color: forestgreen">
+                <a style="color:white" target="_blank" href="~/Views/Home/SignUp.cshtml">
+                    Đăng kí
+                </a>
+            </button>
+
+            hoặc
+            <button type="signupfb" style="color: white; background: linear-gradient(#476fc2,#314f8e); font-weight: bold; border-radius: 5px; padding: 6px;">
+                <a style="color:white" target="_blank" href="https://www.facebook.com">Đăng nhập qua Facebook</a>
+
+            </button>
+            <br />
+            <br />
+            <br />
+            <fieldset id="basicInfo" style="border: 1px solid silver; margin: 0 2px; margin-top: 0px; padding: .35em .625em .75em;">
+                <legend>
+                    Quên mật khẩu?
+                </legend>
+                <br />
+                <label for="email">Email:</label>
+                <br />
+                <input type="email" id="email" onkeydown="if(event.keyCode === 13) {event.preventDefault(); document.getElementById('password').focus();}" required>
+
+
+                <br />
+
+                <br />
+                <button type="find" style="padding: 5px 10px; color: white; background-color: forestgreen">
+                    <a style="color:white" target="_blank">Tìm lại mật khẩu</a>
+                </button>
+
+            </fieldset>
+
+
+
+            <script src="~/Scripts/jsSigninup.js"></script>
+        </form>
+</div>
+
+

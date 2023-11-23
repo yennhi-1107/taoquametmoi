@@ -1,0 +1,844 @@
+﻿* {
+    padding: 0;
+    margin: 0
+}
+
+body {
+    margin: 0
+}
+
+a {
+    background: transparent
+}
+
+img {
+    border: 0
+}
+
+.text-center {
+    text-align: center
+}
+
+body {
+    font-family: arial,sans-serif;
+    font-size: 12px
+}
+
+a {
+    text-decoration: none
+}
+
+.show-mobile {
+    display: none
+}
+
+body {
+    color: #333;
+    font: 12px "Arial",Arial,Helvetica,sans-serif;
+    background: url("http://nhanam.com.vn/Content/images/bg_pattern.jpg")
+}
+
+a {
+    text-decoration: none
+}
+
+ul, li {
+    list-style: none
+}
+
+.page {
+}
+
+.wrapper {
+    width: 1000px;
+    margin: 0 auto
+}
+
+.slider-wrapper {
+    width: 1000px;
+    margin: 0 auto
+}
+
+.header {
+    background: url("http://nhanam.com.vn/Content/images2/headerbg.png") repeat-x scroll 50% 0 rgba(0,0,0,0);
+    width: 100%;
+    height: 150px
+}
+
+    .header .wrap {
+        position: relative;
+        height: 150px;
+        width: 1000px
+    }
+
+    .header .topbar {
+        height: 22px;
+        background: rgba(216,216,216,.6);
+        line-height: 22px;
+        text-transform: uppercase
+    }
+
+        .header .topbar a {
+            color: #016600;
+            font-size: 11px
+        }
+
+            .header .topbar a:hover {
+                text-decoration: underline
+            }
+
+    .header .topnav {
+        float: left;
+        width: 400px
+    }
+
+        .header .topnav > li {
+            display: inline;
+            position: relative
+        }
+
+            .header .topnav > li a:before {
+                content: "|";
+                padding: 0 15px
+            }
+
+            .header .topnav > li:first-child a:before {
+                content: "";
+                padding: 0
+            }
+
+    .header .topprofile {
+        float: right
+    }
+
+        .header .topprofile > li {
+            display: inline-block
+        }
+
+            .header .topprofile > li a {
+                color: #016600
+            }
+
+                .header .topprofile > li a:before {
+                    content: "|";
+                    padding: 0 15px
+                }
+
+            .header .topprofile > li:first-child a:before {
+                content: "";
+                padding: 0
+            }
+
+            .header .topprofile > li:last-child a {
+            }
+
+    .header .cart {
+        background: url("http://nhanam.com.vn/Content/images2/cart.png") no-repeat scroll left center rgba(0,0,0,0);
+        color: #000;
+        height: 55px;
+        position: absolute;
+        right: 0;
+        text-indent: -500em;
+        text-transform: uppercase;
+        top: 20px;
+        width: 55px;
+        cursor: pointer
+    }
+
+    .header .search {
+        background: none repeat scroll 0 0 #fff;
+        border: 1px solid #ccc;
+        height: 28px;
+        position: absolute;
+        right: 0;
+        top: 90px;
+        width: 320px
+    }
+
+        .header .search .text {
+            background: none repeat scroll 0 0 #fff;
+            border: medium none;
+            color: #333;
+            float: left;
+            margin: 6px 0 0 8px;
+            padding: 2px;
+            width: 300px
+        }
+
+            .header .search .text::-webkit-input-placeholder {
+                color: #016600;
+                font-style: italic
+            }
+
+            .header .search .text:-moz-placeholder {
+                color: #016600;
+                font-style: italic
+            }
+
+            .header .search .text::-moz-placeholder {
+                color: #016600;
+                font-style: italic
+            }
+
+            .header .search .text:-ms-input-placeholder {
+                color: #016600;
+                font-style: italic
+            }
+
+        .header .search .submit {
+            background: url("http://nhanam.com.vn/Content/images2/searchbg.png") no-repeat scroll center center rgba(0,0,0,0);
+            border: medium none;
+            display: block;
+            height: 30px;
+            overflow: hidden;
+            position: absolute;
+            right: 0;
+            text-indent: -500em;
+            width: 30px
+        }
+
+    .header .slogan {
+        background: url("images/slogan.png") no-repeat scroll center center rgba(0,0,0,0);
+        display: block;
+        height: 45px;
+        left: 125px;
+        position: absolute;
+        text-indent: -500em;
+        top: 80px;
+        width: 300px
+    }
+
+    .header .logo {
+        display: block;
+        height: 90px;
+        left: -1px;
+        position: absolute;
+        top: 30px;
+        width: 514px
+    }
+
+        .header .logo a {
+            background: url("http://nhanam.com.vn/Content/images2/logo.png") no-repeat scroll 0 0 rgba(0,0,0,0);
+            display: block;
+            height: 90px;
+            text-indent: -500em;
+            width: 514px
+        }
+
+#mainnav {
+    background: url("http://nhanam.com.vn/Content/images2/menubg.png")
+}
+
+    #mainnav .menu {
+        text-align: justify;
+        height: 40px;
+        line-height: 40px
+    }
+
+        #mainnav .menu > li {
+            position: relative;
+            width: 250px;
+            float: left
+        }
+
+            #mainnav .menu > li > a {
+                color: #fff;
+                display: block;
+                text-decoration: none;
+                text-transform: uppercase;
+                text-align: center;
+                font-size: 14px
+            }
+
+            #mainnav .menu > li:hover > a {
+                background: #033801
+            }
+
+            #mainnav .menu > li:hover .submenu {
+                display: block
+            }
+
+    #mainnav .submenu {
+        background: url("http://nhanam.com.vn/Content/images2/menubg.png");
+        box-shadow: 2px 4px 3px rgba(0,0,0,.6);
+        display: none;
+        left: 0;
+        position: absolute;
+        top: 40px;
+        z-index: 9999;
+        width: 250px
+    }
+
+        #mainnav .submenu > li {
+            position: relative
+        }
+
+            #mainnav .submenu > li > a {
+                background: none repeat scroll 0 0 #033801;
+                color: #fff;
+                display: block;
+                line-height: 28px;
+                margin-top: 1px;
+                padding: 0 20px;
+                text-transform: uppercase
+            }
+
+            #mainnav .submenu > li:hover > a {
+                background: rgba(0,0,0,0)
+            }
+
+            #mainnav .submenu > li:hover .submenu2 {
+                display: block
+            }
+
+    #mainnav .submenu2 {
+        background: url("http://nhanam.com.vn/Content/images2/menubg.png");
+        box-shadow: 2px 4px 8px rgba(0,0,0,.6);
+        display: none;
+        left: 250px;
+        position: absolute;
+        top: -1px;
+        z-index: 9999;
+        width: 250px
+    }
+
+        #mainnav .submenu2 > li > a {
+            background: none repeat scroll 0 0 #033801;
+            color: #fff;
+            display: block;
+            line-height: 28px;
+            margin-top: 1px;
+            padding: 0 20px;
+            text-transform: uppercase
+        }
+
+        #mainnav .submenu2 > li:first-child a {
+            margin-top: 0;
+            padding-top: 1px
+        }
+
+        #mainnav .submenu2 > li > a:hover {
+            background: rgba(0,0,0,0)
+        }
+
+.footer {
+    background: url("http://nhanam.com.vn/Content/images2/headerbg.png") repeat-x scroll 50% 0 rgba(0,0,0,0);
+    border-top: 8px solid rgba(216,216,216,.6)
+}
+
+    .footer .copyright {
+        text-align: center;
+        border-top: 4px solid rgba(216,216,216,.8);
+        color: #fff;
+        background: url("http://nhanam.com.vn/Content/images2/menubg.png") repeat scroll 0 0 rgba(0,0,0,0);
+        line-height: 20px;
+        padding-bottom: 5px
+    }
+
+.footermenu {
+    height: 200px
+}
+
+    .footermenu .col {
+        float: left;
+        margin-right: 40px;
+        margin-top: 20px;
+        width: 280px
+    }
+
+        .footermenu .col ul {
+        }
+
+        .footermenu .col li {
+            background: url("http://nhanam.com.vn/Content/images2/arricon.png") no-repeat scroll 0 center rgba(0,0,0,0);
+            border-bottom: 1px solid #c2c2c2;
+            padding: 10px 0 10px 30px
+        }
+
+            .footermenu .col li a {
+                color: #0f5731;
+                font-size: 16px;
+                text-decoration: none
+            }
+
+                .footermenu .col li a:hover {
+                    text-decoration: underline
+                }
+
+    .footermenu .socialbtn {
+        float: right;
+        padding: 48px 0 0
+    }
+
+        .footermenu .socialbtn a {
+            display: inline-block;
+            margin-right: 10px;
+            background: url("http://nhanam.com.vn/Content/images2/shareicons2.png") no-repeat;
+            width: 45px;
+            height: 45px;
+            text-indent: -500em
+        }
+
+            .footermenu .socialbtn a.rss {
+                background-position: -58px 0
+            }
+
+            .footermenu .socialbtn a.twitter {
+                background-position: -116px 0
+            }
+
+            .footermenu .socialbtn a.pinterest {
+                background-position: -178px 0
+            }
+
+            .footermenu .socialbtn a.behance {
+                background-position: -237px 0
+            }
+
+.signup-button-facebook {
+    border-color: #2f426f;
+    background: #3c5fa8;
+    background: -webkit-gradient(linear,0% 0%,0% 100%,from(#476fc2),to(#314f8e));
+    background: -webkit-linear-gradient(0% 0%,0% 100%,from(#476fc2),to(#314f8e));
+    background: -moz-linear-gradient(center top,#476fc2,#314f8e);
+    background: linear-gradient(#476fc2,#314f8e);
+    padding: 6px;
+    color: #fff;
+    font-weight: bold;
+    border-radius: 5px
+}
+
+    .signup-button-facebook:hover, .signup-button-facebook:active {
+        background: #335397;
+        background: -webkit-gradient(linear,0% 0%,0% 100%,from(#3c63b4),to(#2a447b));
+        background: -webkit-linear-gradient(0% 0%,0% 100%,from(#3c63b4),to(#2a447b));
+        background: -moz-linear-gradient(center top,#3c63b4,#2a447b);
+        background: linear-gradient(#3c63b4,#2a447b)
+    }
+
+    .signup-button-facebook:active {
+        -webkit-box-shadow: inset 0 0 5px rgba(0,0,0,.33);
+        -moz-box-shadow: inset 0 0 5px rgba(0,0,0,.33);
+        box-shadow: inset 0 0 5px rgba(0,0,0,.33)
+    }
+
+@media(min-width: 1200px) {
+}
+
+@media(min-width: 768px)and (max-width:1100px) {
+}
+
+@media(min-width: 768px)and (max-width:979px) {
+}
+
+@media(max-width: 979px) {
+    .pagetitle {
+        width: 100%
+    }
+
+    .accessorypopup .content {
+        padding: 0;
+        width: 95%
+    }
+
+    .accessorypopup .bookdetail .image {
+        padding: 0;
+        overflow: hidden
+    }
+
+    .accessorydetailwrap .bookdetail .info h1 {
+        margin-bottom: 15px
+    }
+
+    .accessorydetailwrap .bookdetail .attributes {
+        float: none;
+        width: 100%;
+        margin-bottom: 20px
+    }
+
+    .accessorydetailwrap .bookdetail .action {
+        float: none;
+        margin-left: 0;
+        width: 100%
+    }
+
+    .accessory {
+        width: 25%;
+        margin-right: 0;
+        background: none
+    }
+
+        .accessory a {
+            display: block;
+            background: #fff;
+            margin: 5px
+        }
+
+        .accessory .img {
+            overflow: hidden;
+            padding: 0
+        }
+
+    .listbook {
+        background: rgba(0,0,0,0) none repeat scroll 0 0;
+        padding: 0 15px;
+        width: auto
+    }
+
+    .checkorder .form .text {
+        width: 80%
+    }
+
+    .checkorder .info, .checkorder .infodata {
+        padding: 0 10px
+    }
+
+    .book {
+        width: 25%;
+        margin: 0;
+        padding: 0;
+        height: auto
+    }
+
+        .book .wrap {
+            padding: 4%;
+            width: 92%
+        }
+
+        .book .image {
+            height: 230px;
+            display: block;
+            overflow: hidden
+        }
+
+            .book .image img {
+                width: 100%;
+                height: auto
+            }
+
+        .book .popup {
+            display: none !important
+        }
+
+    .bookdetailwrap {
+        width: 98%;
+        padding: 0;
+        margin: 0 auto
+    }
+
+        .bookdetailwrap .form {
+            padding: 20px
+        }
+
+    .signup-button-facebook {
+        display: inline-block
+    }
+
+    .pageheader {
+        text-align: center
+    }
+
+    .articledetail {
+        padding: 20px
+    }
+
+    .bookdetail {
+        padding: 20px
+    }
+
+        .bookdetail .image {
+            width: 30%
+        }
+
+        .bookdetail .info {
+            margin-left: 0;
+            float: right;
+            width: 64%
+        }
+
+        .bookdetail .attributes {
+            width: 45%
+        }
+
+        .bookdetail .action {
+            width: 45%;
+            margin-left: 0;
+            float: right
+        }
+
+    .bookdetailblockcontent {
+        padding: 0 20px
+    }
+
+    ul.listbook3 {
+        width: 100%
+    }
+
+    .bookslider {
+        padding: 0;
+        overflow: hidden
+    }
+
+        .bookslider .prev {
+            left: 2px
+        }
+
+        .bookslider .next {
+            right: 2px
+        }
+
+    .fb-comments span, .fb-comments span iframe {
+        width: 100% !important
+    }
+
+        .bookdetailblockcomment article, .fb-comments span iframe {
+            width: 800px !important;
+            margin: 0 auto
+        }
+
+    .bookdetailblock {
+        margin: 50px 10px 0
+    }
+
+    .wrapper {
+        width: 98%
+    }
+
+    .footermenu {
+        height: auto
+    }
+
+        .footermenu .col {
+            margin: 0;
+            width: 50%
+        }
+
+        .footermenu .socialbtn {
+            display: none
+        }
+
+    .header .wrap {
+        width: 100%
+    }
+}
+
+@media(max-width: 767px) {
+    .bookdetailwrap .checkout-box {
+        padding: 10px
+    }
+
+    .slider-wrapper {
+        display: none
+    }
+
+    .checkout-head {
+        display: none
+    }
+
+    .listaccessorywrap {
+        padding: 0
+    }
+
+    .accessory {
+        width: 33.33%
+    }
+
+    .book {
+        width: 33.33%
+    }
+
+    .bookdetail .image {
+        display: block;
+        float: inherit;
+        text-align: center;
+        width: 100%;
+        height: auto
+    }
+
+    .bookdetail .info {
+        width: 100%;
+        float: inherit;
+        border: none
+    }
+
+    .bookdetailblockcomment article, .fb-comments span iframe {
+        width: 600px !important
+    }
+
+    .checkout-box textarea {
+        width: 300px
+    }
+
+    .checkout-banking .bank {
+    }
+
+        .checkout-banking .bank .img {
+            float: none;
+            width: auto
+        }
+
+        .checkout-banking .bank .info {
+            padding: 0
+        }
+
+    .page.opensearch .search {
+        display: block
+    }
+
+    .page.openmenu #mainnav {
+        display: block
+    }
+
+    .page .search {
+        display: none;
+        padding: 6px;
+        top: 50px;
+        width: 100%;
+        z-index: 9999
+    }
+
+        .page .search .text {
+            width: 96%
+        }
+
+    .page #mainnav {
+        display: none
+    }
+
+    .header {
+        background: rgba(0,0,0,0) url("http://nhanam.com.vn/Content/images2/menubg.png") repeat scroll 0 0;
+        height: 50px
+    }
+
+        .header .wrap {
+            height: 50px
+        }
+
+        .header .logo {
+            height: 50px;
+            left: 0;
+            position: relative;
+            top: 0;
+            width: auto
+        }
+
+    .hidden-mobile {
+        display: none
+    }
+
+    .show-mobile {
+        display: block
+    }
+
+    .header .cart {
+        bottom: 20px;
+        left: auto;
+        position: fixed;
+        right: 20px;
+        top: auto;
+        z-index: 6666
+    }
+
+    #mainnav {
+        position: absolute;
+        top: 50px;
+        background: #fff;
+        width: 100%;
+        z-index: 999999
+    }
+
+        #mainnav .menu {
+            height: auto;
+            line-height: 20px
+        }
+
+            #mainnav .menu > li {
+                float: none;
+                width: auto
+            }
+
+                #mainnav .menu > li > a {
+                    border-bottom: 1px dotted #ccc;
+                    color: #0f5731;
+                    padding: 5px 10px;
+                    text-align: left
+                }
+
+        #mainnav .submenu {
+            display: none
+        }
+
+            #mainnav .menu > li:hover > a, #mainnav .submenu > li:hover > a {
+                background: none
+            }
+
+            #mainnav .menu > li:hover .submenu, #mainnav .submenu > li:hover .submenu2 {
+                display: none
+            }
+
+        #mainnav .menu > li .submenu.submenu-open {
+            background: rgba(0,0,0,0) none repeat scroll 0 0;
+            box-shadow: none;
+            display: block;
+            left: auto;
+            position: inherit;
+            top: auto;
+            width: 100%
+        }
+
+        #mainnav .submenu > li > a {
+            background: none;
+            color: #0f5731;
+            border-bottom: 1px dotted #ccc;
+            text-transform: none
+        }
+}
+
+@media(max-width: 480px) {
+    .pagetitle {
+    }
+
+        .pagetitle a:before {
+            display: none
+        }
+
+        .pagetitle a:after {
+            display: none
+        }
+
+        .pagetitle a {
+            background: rgba(0,0,0,0) none repeat scroll 0 0;
+            color: #0f5731;
+            font-size: 18px;
+            padding: 0;
+            text-shadow: 0 0 2px #fff
+        }
+
+    .contain {
+        background: url("http://nhanam.com.vn/Content/images/bg_pattern.jpg")
+    }
+
+    .footer {
+        background-repeat: repeat
+    }
+
+    .checkout-box label {
+        display: block;
+        float: none;
+        width: auto
+    }
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+header, footer {
+    background: #333;
+    color: white;
+    padding: 20px;
+}
+
+

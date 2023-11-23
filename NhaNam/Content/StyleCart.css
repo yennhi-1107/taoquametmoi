@@ -1,0 +1,41 @@
+﻿body {
+}
+﻿#cart {
+    border: 1px solid #ccc;
+    padding: 10px;
+}
+
+#cart-items {
+    list-style-type: none;
+    padding: 0;
+}
+
+.cart-item {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 5px;
+}
+
+.title {
+    font-size: 20px;
+    float: left;
+}
+
+.checkout-btn {
+    float: right;
+}
+
+.close-button {
+    float: right;
+}
+
+.continueshopping-btn {
+    float: left;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    background-color: black;
+    padding: 5px;
+}

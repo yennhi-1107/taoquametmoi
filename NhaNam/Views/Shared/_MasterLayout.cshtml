@@ -1,0 +1,318 @@
+﻿<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>@ViewBag.Title</title>
+    <link href="~/Content/StyleMaster.css" rel="stylesheet" />
+</head>
+<body>
+    <header>
+        @Styles.Render("~/Content/bootstrap")
+    </header>
+    <div class="page">
+        <div class="header">
+            <div class="topbar hidden-mobile">
+                <div class="wrapper">
+                    <div class="clearfix">
+                        <ul class="topnav">
+                            <li><a href="/tin-tuc/5/gioi-thieu">Giới thiệu</a></li>
+
+                            <li><a href="/lich-su-giao-dich">Lịch sử giao dịch</a></li>
+
+                            <li><a href="/kiem-tra-don-hang">Kiểm tra đơn hàng</a></li>
+                        </ul>
+                        <ul class="topprofile">
+                            <li>
+                                <a class="signin" href="~/Views/SigninUser/SignupUser.cshtml">Đăng ký</a>
+                            </li>
+                            <li>
+                                <!--đăng nhập-->
+                                <a  class="signup" href="~/Views/SigninUser/IndexSignin.cshtml">Đăng nhập</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="wrapper wrap">
+                <h1 class="logo">
+                    <a href="/">NhaNam</a>
+                </h1>
+
+                <div class="cart" id="cart">
+                    <a href="~/Views/ShoppingCart/ShowCart.cshtml">Giỏ hàng (<span id="cartcount">0</span>)</a>
+
+                </div>
+                <div class="search">
+                    <form action="/Search" method="GET" novalidate="novalidate">
+                        <input type="text" name="q" placeholder="Tìm kiếm sách..." class="text">
+                        <input type="submit" value="Tìm kiếm" class="submit">
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="mainnav">
+        <div class="wrapper">
+            <ul class="menu clearfix">
+                <li>
+                    <a href="/sach-moi-xuat-ban">
+                        Danh mục sách
+                    </a>
+                    <ul class="submenu">
+                        <li>
+                            <a href="/chuyen-muc/1/van-hoc-viet-nam">
+                                Văn học Việt Nam
+                            </a>
+                            <ul class="submenu2">
+                                <li>
+                                    <a href="/chuyen-muc/2/tieu-thuyet">
+                                        Tiểu thuyết
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="/chuyen-muc/3/truyen-ngan">
+                                        Truyện ngắn
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="/chuyen-muc/4/tho-kich">
+                                        Thơ / Kịch
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="/chuyen-muc/5/hoi-ky-phe-binh-tieu-luan">
+                                        Hồi ký / Phê Bình / Tiểu luận
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="/chuyen-muc/6/tap-but-tan-van">
+                                        Tạp bút / Tản văn
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="/chuyen-muc/7/van-hoc-nuoc-ngoai">
+                                Văn học Nước Ngoài
+                            </a>
+                            <ul class="submenu2">
+                                <li>
+                                    <a href="/chuyen-muc/8/duong-dai">
+                                        Đương đại
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="/chuyen-muc/9/lang-man">
+                                        Lãng mạn
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="/chuyen-muc/10/trinh-tham-kinh-di">
+                                        Trinh thám / Kinh dị
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="/chuyen-muc/11/kiem-hiep">
+                                        Kiếm hiệp
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="/chuyen-muc/12/kinh-dien">
+                                        Kinh điển
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="/chuyen-muc/13/tho-kich">
+                                        Thơ / Kịch
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="/chuyen-muc/14/hoi-ky-tieu-luan">
+                                        Hồi ký / Tiểu luận
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="/chuyen-muc/15/huyen-ao-gia-tuong">
+                                        Huyền ảo / Giả tưởng
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="/chuyen-muc/16/tan-van-tap-but">
+                                        Tản văn / Tạp bút
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="/chuyen-muc/17/thieu-nhi">
+                                Thiếu nhi
+                            </a>
+                            <ul class="submenu2">
+                                <li>
+                                    <a href="/chuyen-muc/18/tuoi-teen">
+                                        Tuổi teen
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="/chuyen-muc/19/truyen-tranh">
+                                        Truyện tranh
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="/chuyen-muc/20/thieu-nhi">
+                                        Thiếu nhi
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="/chuyen-muc/21/thoi-su---chinh-tri">
+                                Thời sự - Chính trị
+                            </a>
+                            <ul class="submenu2">
+                                <li>
+                                    <a href="/chuyen-muc/22/hoi-ky-tu-truyen">
+                                        Hồi ký / Tự truyện
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="/chuyen-muc/23/the-gioi-hien-dai">
+                                        Thế giới hiện đại
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="/chuyen-muc/25/khoa-hoc-tu-nhien---nhan-van">
+                                Khoa học tự nhiên - Nhân văn
+                            </a>
+                            <ul class="submenu2">
+                                <li>
+                                    <a href="/chuyen-muc/26/lich-su">
+                                        Lịch sử
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="/chuyen-muc/27/triet-hoc">
+                                        Triết học
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="/chuyen-muc/28/tam-ly-hoc">
+                                        Tâm lý học
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="/chuyen-muc/29/kinh-te">
+                                        Kinh tế
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="/chuyen-muc/30/vu-tru">
+                                        Vũ trụ
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="/chuyen-muc/31/sinh-hoc">
+                                        Sinh học
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="/chuyen-muc/32/tham-khao">
+                                Tham khảo
+                            </a>
+                        </li>
+                        <li>
+                            <a href="/chuyen-muc/43/giam-gia-dac-biet">
+                                Giảm giá đặc biệt
+                            </a>
+                        </li>
+                        <li>
+                            <a href="/chuyen-muc/44/sach-tai-ban">
+                                Sách tái bản
+                            </a>
+                        </li>
+                        <li>
+                            <a href="/chuyen-muc/45/dat-truoc-sach">
+                                Đặt trước sách
+                            </a>
+                        </li>
+                    </ul>
+                </li>
+                <!-- <li>
+                    <a href="/combo-sach">Combo Sách</a>
+                </li> -->
+
+                <li>
+                    <a href="/chuyen-muc/42/sach-ban-chay">Sách bán chạy</a>
+                </li>
+
+                <li>
+                    <a href="/tin-tuc/14/chuong-trinh-khuyen-mai">Chương trình khuyến mãi</a>
+                </li>
+
+                <li>
+                    <a href="/chuyen-muc/43/giam-gia-dac-biet">Giảm giá đặc biệt</a>
+                </li>
+                <li class="show-mobile"><a href="/tin-tuc/5/gioi-thieu">Giới thiệu</a></li>
+
+                <li class="show-mobile"><a href="/lich-su-giao-dich">Lịch sử giao dịch</a></li>
+
+                <li class="show-mobile"><a href="/kiem-tra-don-hang">Kiểm tra đơn hàng</a></li>
+                <li class="show-mobile">
+                    <a href="/dang-ky">Đăng ký</a>
+                </li>
+                <li class="show-mobile">
+                    <a href="/dang-nhap">Đăng nhập</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div class="container">
+        <div>
+            @RenderBody()
+        </div>
+    </div>
+
+    <div class="footer">
+        <div class="wrapper">
+            <div class="footermenu clearfix">
+                <div class="col">
+                    <ul>
+                        <li><a href="/tin-tuc/5/gioi-thieu">Giới thiệu</a></li>
+                        <li><a href="/tin-tuc/9/chinh-sach-bao-mat">Chính sách bảo mật</a></li>
+                        <li><a href="/tin-tuc/10/chinh-sach-van-chuyen">Chính sách vận chuyển</a></li>
+                        <li><a href="/tin-tuc/12/hinh-thuc-thanh-toan"> Hình thức thanh toán</a></li>
+                    </ul>
+                </div>
+                <div class="col">
+                    <ul>
+                        <li><a href="/tin-tuc/11/quy-dinh-doi-tra-huy-don-hang" bis_skin_checked="1">Quy định đổi, trả và huỷ đơn hàng</a></li>
+                        <li><a href="/tin-tuc/7/huong-dan-dat-hang" bis_skin_checked="1">Hướng dẫn đặt hàng</a></li>
+                        <li><a href="/tin-tuc/8/lien-he" bis_skin_checked="1">Liên hệ</a></li>
+
+                        <li><a href="/tin-tuc/19/thong-bao" bis_skin_checked="1">Thông báo</a></li>
+                    </ul>
+                </div>
+                <div class="socialbtn" bis_skin_checked="1">
+                    <a class="facebook" href="https://www.facebook.com/nhanampublishing" bis_skin_checked="1">
+                        Facebook
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="copyright" bis_skin_checked="1">
+            <div class="wrapper" bis_skin_checked="1">
+                © 2014 - Bản quyền của Công Ty Cổ Phần Văn Hoá và Truyền Thông Nhã Nam - <a href="/" style="color:#fff">nhanam.com.vn</a> <br>
+                Địa chỉ: 59 Đỗ Quang, phường Trung Hoà, quận Cầu Giấy, Hà Nội
+                <br>
+                Giấy ĐKKD số 0101603420 do Sở KH&amp;ĐT TP Hà Nội cấp ngày 21 tháng 1 năm 2005 sửa đổi lần 5 ngày 20/3/2013
+            </div>
+        </div>
+    </div>
+</body>
+</html>
+

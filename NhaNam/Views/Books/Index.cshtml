@@ -1,0 +1,72 @@
+﻿@model IEnumerable<NhaNam.Models.Product>
+
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Index</h2>
+@using (Html.BeginForm())
+{
+    <div class="form-group form-inline">
+        Tìm sản phẩm: @Html.TextBox("SearchString", "", new { @class = "form-control" })
+        <input type="submit" class="btn btn-default" value="Search" />
+    </div>
+}
+<table class="table">
+    <tr>
+        <th>
+            TÊN SẢN PHẦM
+        </th>
+        <th>
+            HÌNH ẢNH
+        </th>
+        <th class="col-lg-4">
+            MÔ TẢ
+        </th>
+        <th>
+            NGÀY TẠO
+        </th>
+        <th>
+            LOẠI HÀNG
+        </th>
+        <th>BÌNH LUẬN</th>
+    </tr>
+
+    @foreach (var item in Model)
+    {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.ProName)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.ProImage)
+                @*<img src="@Url.Content(item.ProImage)" width="100" />*@
+
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.NameDecription)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.CreatedDate)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Category.NameCate)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Comment.CommentText)
+            </td>
+            <td>
+                @Html.ActionLink("Edit", "Edit", new { id = item.ProID }, new { @class = "btn btn-sm btn-info" }) |
+                @Html.ActionLink("Details", "Details", new { id = item.ProID }, new { @class = "btn btn-sm btn-success" }) |
+                @Html.ActionLink("Delete", "Delete", new { id = item.ProID }, new { @class = "btn btn-sm btn-danger" })
+            </td>
+        </tr>
+    }
+
+</table>
+<p>
+    @Html.ActionLink("Thêm mới", "Create", null, new { @class = "btn btn-primary" })
+</p>
+
+

@@ -1,0 +1,40 @@
+﻿
+@{
+    ViewBag.Title = "Lịch sử giao dịch";
+    Layout = "~/Views/Shared/_MasterLayout.cshtml";
+
+}
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Lịch sử giao dịch</title>
+
+</head>
+    <h1 style=" color: #524643; font-size: 18px; text-transform: uppercase;font-family:Arial">Lịch sử giao dịch</h1>
+    <form style="padding:20px;" method="GET" action="kiem-tra-don-hang">
+
+        <input name="orderid" value placeholder="Nhập mã đơn hàng của bạn" class="text" type="text" id="kiem-tra-don-hang" style="width:60%; padding: 5px 10px; font-size: 12px; font-family: Arial; ">
+        <button class="submit" type="submit" style="background: none repeat scroll 0 0 #00870a;
+    border: 1px solid #00870a;
+    color: #fff;
+    font-weight: bold;
+    padding: 5px 10px;">
+            Tìm mã
+        </button>
+    </form>
+    <br />
+    <table id="transaction-table" style="padding: 5px; border: 1px solid #ccc; text-align: center; font-family: Arial; border-collapse: collapse; border-spacing: 0;">
+        <tbody>
+            <tr style=" display: table-row; vertical-align: inherit; width:80%">
+                <th>STT</th>
+                <th>Mã đơn hàng</th>
+                <th>Người mua</th>
+                <th>Địa chỉ</th>
+                <th>Ngày mua</th>
+                <th>Trạng thái</th>
+            </tr>
+        </tbody>
+    </table>
+    <script src="~/Scripts/jsTransactionHistory.js"></script>
+</html>
